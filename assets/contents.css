@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
 /* 스크롤바의 너비 */
 body::-webkit-scrollbar {
     width: 5px;
@@ -31,11 +45,12 @@ header.fxnull-header {
 
 /* 헤더 로고 */
 a.logo-text {
+    font-family: 'OAGothic-ExtraBold';
     text-decoration: none;
     color: #c7ef1a;
     font-weight: 800;
     font-size: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 /* 헤더 로고 호버 시 */
@@ -63,6 +78,7 @@ li:hover > a {
 
 /* 헤더 메뉴 기본설정 없앰 */
 a.menu-item {
+    font-family: 'Pretendard-Regular';
     color: #949494;
     text-decoration: none;
 }
@@ -94,34 +110,74 @@ div.main-page {
 
 /* 메인 타이틀 */
 p.main-title {
+    font-family: 'OAGothic-ExtraBold';
     position: relative;
     color: #ffffff;
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: -1.5px;
     line-height: 1.2;
-    font-weight: 800;
+}
+
+/* 소개 섹션 플렉스 */
+section.introduction-section {
+    position: relative;
+    width: 100vh;
 }
 
 /* 소개 전체 */
 div.introduce-me {
-    padding-top: 100px;
-    width: 1024px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    padding-top: 100px;
+    width: 1240px;
+}
+
+/* 소개 타이틀 전체 */
+div.introduce-title {
 }
 
 /* 타이틀 */
 p.im {
-    font-size: 90px;
-    font-weight: 700;
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 80px;
     color: #c7ef1a;
     letter-spacing: -1.5px;
+    height: 90px;
 }
 
-i.sub {
-    font-size: 24px;
+/* 타이틀 서브 */
+p.title-sub {
+    margin-left: 5px;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
     font-weight: 400;
     color: #686868;
+    letter-spacing: -1px;
+}
+
+/* 소개 인사 */
+div.introduce-say {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    margin-top: 18px;
+}
+
+/* 인사 영어 */
+p.sub {
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 35px;
+    color: #c7ef1a;
     letter-spacing: -1.5px;
+    height: 40px;
+}
+
+/* 인사 한국어 */
+p.comment {
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #686868;
 }
