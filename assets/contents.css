@@ -14,20 +14,20 @@
 
 /* 스크롤바의 너비 */
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
 
 /* 스크롤바 길이, 색상 */
 body::-webkit-scrollbar-thumb {
     height: 30%; /* 스크롤바의 길이 */
-    background: #2f2f2f; /* 스크롤바의 색상 */
+    background: #6d6d6d; /* 스크롤바의 색상 */
 
     border-radius: 10px;
 }
 
 /* 스크롤바 뒷 배경 색상*/
 body::-webkit-scrollbar-track {
-    background: #131313;
+    background: #2f2f2f;
 }
 
 body {
@@ -85,6 +85,7 @@ a.menu-item {
 
 /* 메인 섹션 컬러 */
 section.main-section{
+    width: 100%;
     height: 960px;
     background-color: #131313;
 }
@@ -98,37 +99,67 @@ video.smog {
     opacity: 40%;
 }
 
-/* 메인 영역 플렉스 */
+/* 타이틀, 버튼 플렉스 */
 div.main-page {
+    margin-top: 180px;
+    height: 630px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1240px;
-    height: 960px;
-    padding-bottom: 85px;
+    justify-content: space-between;
+    align-content: end;
+    align-items: flex-end;
 }
 
-/* 메인 타이틀 */
-p.main-title {
+/* 메인 타이틀 플렉스 */
+div.main-title {
+    display: flex;
+    justify-content: center;
+    width: 1240px;
+    height: 540px;
+}
+
+/* 메인 타이틀 텍스트 */
+p.main-title-text {
     font-family: 'OAGothic-ExtraBold';
     position: relative;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 85px;
     letter-spacing: -1.5px;
     line-height: 1.2;
 }
 
+/* 아래로 버튼 스타일 설정 */
+a.arrow {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    position: relative;
+    color: #ffffff;
+}
+
+/* 아래로 버튼 호버 시 */
+div:hover > a.arrow {
+    color: #c7ef1a;
+    border: 1px solid #c7ef1a;
+}
+
 /* 소개 섹션 플렉스 */
 section.introduction-section {
-    position: relative;
-    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 620px;
 }
 
 /* 소개 전체 */
 div.introduce-me {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding-top: 100px;
     width: 1240px;
 }
@@ -152,7 +183,7 @@ p.title-sub {
     font-family: 'Pretendard-Regular';
     font-size: 18px;
     font-weight: 400;
-    color: #686868;
+    color: #b2b2b2;
     letter-spacing: -1px;
 }
 
@@ -160,7 +191,7 @@ p.title-sub {
 div.introduce-say {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    padding-left: 80px;
     margin-top: 18px;
 }
 
@@ -176,8 +207,42 @@ p.sub {
 /* 인사 한국어 */
 p.comment {
     font-family: 'Pretendard-Regular';
+    margin-left: 1px;
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
+    color: #b2b2b2;
+}
+
+/* 상세 소개 멘트 */
+div.introduce-contents-detail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+/* 코멘트 한 묶음 */
+div.comment-set {
+    width: 450px;
+    margin-left: 81px;
+}
+
+/* 타이틀 */
+p.why {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
     color: #686868;
+    height: 0;
+}
+
+/* 본문 */
+p.why-reason {
+    font-family: 'Pretendard-Regular';
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #b2b2b2;
 }
