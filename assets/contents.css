@@ -1,88 +1,3 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OAGothic-ExtraBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
-
-/* 스크롤바의 너비 */
-body::-webkit-scrollbar {
-    width: 6px;
-}
-
-/* 스크롤바 길이, 색상 */
-body::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #6d6d6d; /* 스크롤바의 색상 */
-
-    border-radius: 10px;
-}
-
-/* 스크롤바 뒷 배경 색상*/
-body::-webkit-scrollbar-track {
-    background: #2f2f2f;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* 헤더 메뉴 전체 */
-header.fxnull-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 100px 0 100px;
-    position: relative;
-}
-
-/* 헤더 로고 */
-a.logo-text {
-    font-family: 'OAGothic-ExtraBold';
-    text-decoration: none;
-    color: #c7ef1a;
-    font-weight: 800;
-    font-size: 25px;
-    letter-spacing: 1.5px;
-}
-
-/* 헤더 로고 호버 시 */
-div:hover > a {
-    color: #ffffff;
-}
-
-/* 헤더 메뉴 플렉스 */
-div.header-menu {
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-/* 헤더 메뉴 밑줄제거 */
-li {
-    display: inline-block;
-}
-
-/* 헤더 메뉴 호버 시 */
-li:hover > a {
-    color: #c7ef1a;
-}
-
-/* 헤더 메뉴 기본설정 없앰 */
-a.menu-item {
-    font-family: 'Pretendard-Regular';
-    color: #949494;
-    text-decoration: none;
-}
-
 /* 메인 섹션 컬러 */
 section.main-section{
     width: 100%;
@@ -247,6 +162,7 @@ p.why-reason {
     color: #b2b2b2;
 }
 
+/* 포트폴리오 섹션 */
 section.portfolio-section {
     display: flex;
     justify-content: center;
@@ -255,10 +171,12 @@ section.portfolio-section {
     background: #131313;
 }
 
+/* 포트폴리오 내용 */
 div.portfolio-contents {
     padding-top: 100px;
 }
 
+/* 포트폴리오 타이틀 */
 p.portfolio-title {
     font-family: 'OAGothic-ExtraBold';
     width: 1240px;
@@ -268,7 +186,7 @@ p.portfolio-title {
     height: 0;
 }
 
-/* slider-wrap */
+/* 슬라이더 전체 영역 */
 .slider-wrap {
     margin-top:80px;
     width: 1240px;
@@ -281,7 +199,7 @@ p.portfolio-title {
 /* 이미지가 보이는 영역 */
 .slider-img {
     width: 960px;
-    height: 1000px;
+    height: 750px;
     overflow: hidden;
 }
 
@@ -293,6 +211,7 @@ p.portfolio-title {
     height: auto;
 }
 
+/* 슬라이더 버튼 전체 */
 div.slider-btn {
     width: 1240px;
     display: flex;
@@ -308,19 +227,22 @@ div.slider-btn {
     color: #fff;
 }
 
+/* 슬라이더 버튼 호버 시 */
 .slider-btn a:hover {
     color: #c7ef1a;
 }
 
+/* 슬라이더 버튼 : 이전 */
 .slider-btn a.prev {
-
     left: 0;
 }
 
+/* 슬라이더 버튼 : 다음 */
 .slider-btn a.next {
     right: 0;
 }
 
+/* 포트폴리오 설명 플렉스 */
 div.portfolio-info {
     display: flex;
     flex-direction: row;
@@ -328,10 +250,12 @@ div.portfolio-info {
     margin-top: 30px;
 }
 
+/* 포트폴리오 설명 가로 사이즈 */
 div.portfolio-info-form {
     width: 450px;
 }
 
+/* 포트폴리오 설명 타이틀 */
 p.portfolio-info-title {
     font-family: 'Pretendard-Regular';
     font-weight: 600;
@@ -341,6 +265,7 @@ p.portfolio-info-title {
     height: 20px;
 }
 
+/* 포트폴리오 설명 */
 p.portfolio-info-detail {
     font-family: 'Pretendard-Regular';
     font-weight: 200;
@@ -348,4 +273,119 @@ p.portfolio-info-detail {
     color: #b2b2b2;
     letter-spacing: -0.5px;
     height: 0;
+}
+
+/* 스터디 섹션 */
+section.study-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+/* 스터디 내용 */
+div.study-contents {
+    margin-top: 100px;
+    width: 960px;
+}
+
+/* 스터디 타이틀 */
+p.study-title {
+    font-family: 'OAGothic-ExtraBold';
+    width: 960px;
+    font-size: 35px;
+    color: #c7ef1a;
+    letter-spacing: -1.5px;
+}
+
+/* 토끼 이미지 */
+img.me {
+    width: 380px;
+    border-radius: 10px;
+}
+
+/* 내용 플렉스 */
+div.study-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 내용 오른쪽 */
+div.study-detail-right {
+    margin-left: 40px;
+}
+
+/* 공부 소타이틀 */
+p.study-sub-title {
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 20px;
+    color: #686868;
+    letter-spacing: -0.5px;
+}
+
+/* 내용 상세 */
+p.study-contents-detail {
+    width: 600px;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #b2b2b2;
+}
+
+/* 구분선 */
+div.line {
+    margin: 30px 0 30px 0;
+    height: 1px;
+    width: 500px;
+    background-color: #c7c7c7;
+}
+
+/* 아이콘 너비 */
+div.study-icons {
+    width: 300px;
+}
+
+/* 아이콘 정렬 */
+div.icon-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 아이콘 버튼 */
+a.icon-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #686868;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+/* 아이콘 텍스트 */
+p.icon-text {
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #686868;
+    height: 0;
+}
+
+/* 아이콘 호버 시 버튼 색 */
+a.icon-btn:hover {
+    background-color: #c7ef1a;
+    color: #ffffff;
+}
+
+/* 아이콘 호버 시 텍스트 색 */
+a.icon-btn:hover p.icon-text {
+    color: #ffffff;
 }
