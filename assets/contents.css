@@ -246,3 +246,106 @@ p.why-reason {
     letter-spacing: -0.5px;
     color: #b2b2b2;
 }
+
+section.portfolio-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background: #131313;
+}
+
+div.portfolio-contents {
+    padding-top: 100px;
+}
+
+p.portfolio-title {
+    font-family: 'OAGothic-ExtraBold';
+    width: 1240px;
+    font-size: 35px;
+    color: #c7ef1a;
+    letter-spacing: -1.5px;
+    height: 0;
+}
+
+/* slider-wrap */
+.slider-wrap {
+    margin-top:80px;
+    width: 1240px;
+    height: 585px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* 이미지가 보이는 영역 */
+.slider-img {
+    width: 960px;
+    height: 1000px;
+    overflow: hidden;
+}
+
+/* 전체 이미지를 감싸고 있는 부모 : 움직이는 영역 */
+.slider-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 4000px;
+    height: auto;
+}
+
+div.slider-btn {
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+/* 슬라이더 버튼 */
+.slider-btn a {
+    position: absolute;
+    margin-top: 250px;
+    width: 30px;
+    color: #fff;
+}
+
+.slider-btn a:hover {
+    color: #c7ef1a;
+}
+
+.slider-btn a.prev {
+
+    left: 0;
+}
+
+.slider-btn a.next {
+    right: 0;
+}
+
+div.portfolio-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+div.portfolio-info-form {
+    width: 450px;
+}
+
+p.portfolio-info-title {
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    height: 20px;
+}
+
+p.portfolio-info-detail {
+    font-family: 'Pretendard-Regular';
+    font-weight: 200;
+    font-size: 18px;
+    color: #b2b2b2;
+    letter-spacing: -0.5px;
+    height: 0;
+}
