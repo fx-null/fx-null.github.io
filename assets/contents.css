@@ -389,3 +389,65 @@ a.icon-btn:hover {
 a.icon-btn:hover p.icon-text {
     color: #ffffff;
 }
+
+/* 커넥트 섹션 */
+section.contact-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    background-color: #2f2f2f;
+}
+
+/* 컨텐츠 영역 */
+div.contact-contents {
+    width: 1240px;
+    margin-top: 50px;
+}
+
+/* 커넥트 정렬 */
+div.contact-contents-align {
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 컨텐츠 로고 */
+a.contact-logo {
+    display: flex;
+    justify-content: start;
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+a.contact-logo:hover {
+    color: #4c4c4c;
+}
+
+/* 엔딩멘트 */
+p.ending {
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #808080;
+    height: 0;
+}
+
+a.top-btn {
+    font-family: 'Pretendard-Regular';
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #686868;
+    color: #2f2f2f;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
